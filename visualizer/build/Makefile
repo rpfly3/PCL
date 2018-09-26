@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pcl_visualizer_merge
+
+# Build rule for target.
+pcl_visualizer_merge: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_visualizer_merge
+.PHONY : pcl_visualizer_merge
+
+# fast build rule for target.
+pcl_visualizer_merge/fast:
+	$(MAKE) -f CMakeFiles/pcl_visualizer_merge.dir/build.make CMakeFiles/pcl_visualizer_merge.dir/build
+.PHONY : pcl_visualizer_merge/fast
+
+#=============================================================================
 # Target rules for targets named pcl_visualizer_demo
 
 # Build rule for target.
@@ -122,6 +135,33 @@ pcl_visualizer_demo: cmake_check_build_system
 pcl_visualizer_demo/fast:
 	$(MAKE) -f CMakeFiles/pcl_visualizer_demo.dir/build.make CMakeFiles/pcl_visualizer_demo.dir/build
 .PHONY : pcl_visualizer_demo/fast
+
+merge.o: merge.cc.o
+
+.PHONY : merge.o
+
+# target to build an object file
+merge.cc.o:
+	$(MAKE) -f CMakeFiles/pcl_visualizer_merge.dir/build.make CMakeFiles/pcl_visualizer_merge.dir/merge.cc.o
+.PHONY : merge.cc.o
+
+merge.i: merge.cc.i
+
+.PHONY : merge.i
+
+# target to preprocess a source file
+merge.cc.i:
+	$(MAKE) -f CMakeFiles/pcl_visualizer_merge.dir/build.make CMakeFiles/pcl_visualizer_merge.dir/merge.cc.i
+.PHONY : merge.cc.i
+
+merge.s: merge.cc.s
+
+.PHONY : merge.s
+
+# target to generate assembly for a file
+merge.cc.s:
+	$(MAKE) -f CMakeFiles/pcl_visualizer_merge.dir/build.make CMakeFiles/pcl_visualizer_merge.dir/merge.cc.s
+.PHONY : merge.cc.s
 
 pcl_visualizer_demo.o: pcl_visualizer_demo.cpp.o
 
@@ -158,7 +198,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... pcl_visualizer_merge"
 	@echo "... pcl_visualizer_demo"
+	@echo "... merge.o"
+	@echo "... merge.i"
+	@echo "... merge.s"
 	@echo "... pcl_visualizer_demo.o"
 	@echo "... pcl_visualizer_demo.i"
 	@echo "... pcl_visualizer_demo.s"

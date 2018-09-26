@@ -1,3 +1,4 @@
 /home/pengfei/Documents/test/PCL/visualizer/build/CMakeFiles/edit_cache.dir
 /home/pengfei/Documents/test/PCL/visualizer/build/CMakeFiles/rebuild_cache.dir
+/home/pengfei/Documents/test/PCL/visualizer/build/CMakeFiles/pcl_visualizer_merge.dir
 /home/pengfei/Documents/test/PCL/visualizer/build/CMakeFiles/pcl_visualizer_demo.dir

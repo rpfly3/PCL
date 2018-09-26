@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/pengfei/Documents/test/PCL/visualizer
 CMAKE_BINARY_DIR = /home/pengfei/Documents/test/PCL/visualizer/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/pcl_visualizer_merge.dir
+
+# All Build rule for target.
+CMakeFiles/pcl_visualizer_merge.dir/all:
+	$(MAKE) -f CMakeFiles/pcl_visualizer_merge.dir/build.make CMakeFiles/pcl_visualizer_merge.dir/depend
+	$(MAKE) -f CMakeFiles/pcl_visualizer_merge.dir/build.make CMakeFiles/pcl_visualizer_merge.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pengfei/Documents/test/PCL/visualizer/build/CMakeFiles --progress-num=3,4 "Built target pcl_visualizer_merge"
+.PHONY : CMakeFiles/pcl_visualizer_merge.dir/all
+
+# Include target in all.
+all: CMakeFiles/pcl_visualizer_merge.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/pcl_visualizer_merge.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pengfei/Documents/test/PCL/visualizer/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pcl_visualizer_merge.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pengfei/Documents/test/PCL/visualizer/build/CMakeFiles 0
+.PHONY : CMakeFiles/pcl_visualizer_merge.dir/rule
+
+# Convenience name for target.
+pcl_visualizer_merge: CMakeFiles/pcl_visualizer_merge.dir/rule
+
+.PHONY : pcl_visualizer_merge
+
+# clean rule for target.
+CMakeFiles/pcl_visualizer_merge.dir/clean:
+	$(MAKE) -f CMakeFiles/pcl_visualizer_merge.dir/build.make CMakeFiles/pcl_visualizer_merge.dir/clean
+.PHONY : CMakeFiles/pcl_visualizer_merge.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/pcl_visualizer_merge.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/pcl_visualizer_demo.dir
 
 # All Build rule for target.
